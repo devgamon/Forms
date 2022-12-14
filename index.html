@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <header class="header">
+        <a href="https://github.com/devgamon"><img src="logogamon.png" alt="Profile"></a>
+    </header>
+
+    <main class="main">
+        <form class="form">
+            <div class="inputBox">
+                <label for="nome">Nome de Usuário</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div class="inputBox">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="inputBox">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha">
+            </div>
+            <div class="inputBox">
+                <label for="ConfirmSenha">Confirmar Senha</label>
+                <input type="password" name="confirmSenha" id="confirmSenha">            
+            </div>
+            <div class="dateContainer">
+                <div class="dateBox">
+                    <label for="dia">Dia</label>
+                    <input type="number" name="dia" id="dia">
+                </div>
+                <div class="dateBox">
+                    <label for="mes">Mês</label>
+                    <select name="mes" id="mes">
+                        <option value="janeiro">Janeiro</option>
+                        <option value="fevereiro">Fevereiro</option>
+                        <option value="março">Março</option>
+                        <option value="abril">Abril</option>
+                        <option value="maio">Maio</option>
+                        <option value="junho">Junho</option>
+                        <option value="julho">Julho</option>
+                        <option value="agosto">Agosto</option>
+                        <option value="setembro">Setembro</option>
+                        <option value="outubro">Outubro</option>
+                        <option value="novembro">Novembro</option>
+                        <option value="dezembro">Dezembro</option>
+                    </select>
+                </div>
+                <div class="dateBox">
+                    <label for="ano">Ano</label>
+                    <input type="number" name="ano" id="ano">
+                </div>
+            </div>
+            <div class="radioContainer">
+                <div class="radioBox">
+                    <input type="radio" name="masculino" id="masculino">
+                    <label for="masculino">Masculino</label>
+                </div>
+                <div class="radioBox">
+                    <input type="radio" name="feminino" id="feminino">
+                    <label for="feminino">Feminino</label>                
+                </div>
+                <div class="radioBox">
+                    <input type="radio" name="nao_binario" id="nao_binario">
+                    <label for="nao_binario">Não Binário</label>                
+                </div>
+                <div class="radioBox">
+                    <input type="radio" name="outros" id="outros">
+                    <label for="outros">Outros</label>                
+                </div>
+                <div class="radioBox">
+                    <input type="radio" name="prefiro_nao_dizer" id="prefiro_nao_dizer">
+                    <label for="prefiro_nao_dizer">Prefiro não dizer</label>                
+                </div>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
