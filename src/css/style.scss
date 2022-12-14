@@ -23,6 +23,8 @@ body {
 
 .form {
     @include flexSet(center, center, column);
+    padding: 1rem;
+    width: 450px;
 
     .inputBox {
         @include flexSet(default, default, column);
@@ -90,6 +92,7 @@ body {
 
     .radioContainer {
         @include flexSet(default, center, row);
+        flex-wrap: wrap;
         width: 100%;
         margin-bottom: 1rem;
 
@@ -100,6 +103,13 @@ body {
                 font-size: 0.8rem;
             }
         }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .form {
+        background: red;
+        width: 360px;
     }
 }
 
