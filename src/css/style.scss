@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import 'variables';
+
+* {
+    @include reset();
+}
+
+body {
+    @include flexSet(default, center, column);
+    @include wd( 100vh, 100%);
+    background: $wc;
+}
+
+.header {
+    @include flexSet(center, space-between, default);
+    padding: 1rem 7%;
+    width: 100%;
+
+    &_img {
+        width: 10rem;
+    }
+}
+
+.form {
+    @include flexSet(center, center, column);
+
+    .inputBox {
+        @include flexSet(default, default, column);
+        width: 100%;
+        margin-bottom: 1rem;
+
+        label {
+            font-size: 0.8rem;
+            margin-bottom: 0.4rem;
+        }
+
+        input {
+            padding: 0.8rem;
+            width: 100%;
+            border: 1px solid $wb;
+
+            &::placeholder {
+                color: $shadow5;
+            }
+        }
+
+        input[type="submit"] {
+            background: $main;
+            color: $wc;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+    }
+
+    .dateContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        margin-bottom: 1rem;
+        .dateBox {
+            @include flexSet(default, default, column);
+
+            input, select {
+                padding: 0.8rem;
+                width: 100%;
+                border: 1px solid $wb; 
+
+                &::placeholder {
+                    color: $shadow5;
+                }
+            }
+
+            label {
+                font-size: 0.8rem;
+                margin-bottom: 0.4rem; 
+                margin-top: 1.2rem;
+            }
+        }
+    }
+
+    .title {
+        text-align: left;
+        width: 100%;
+
+        label {
+            font-size: 0.8rem;
+            margin-bottom: 0.4rem;
+        }
+    }
+
+    .radioContainer {
+        @include flexSet(default, center, row);
+        width: 100%;
+        margin-bottom: 1rem;
+
+        .radioBox {
+            padding: 1rem;
+
+            label {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+/* responsividade em breve */

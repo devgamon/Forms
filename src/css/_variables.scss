@@ -1,0 +1,32 @@
+/* Colors */
+
+$main: #25bee5;
+$bc: #1d1d1d;
+$wc: #fff;
+$wb: #f0f0f0;
+$g1: rgba(0,0,0,0.1);
+$shadow5:  rgba(0,0,0,0.5);
+
+/* Functions */
+
+@mixin reset() {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+@mixin wd($hg, $wd) {
+    min-height: $hg;
+    width: $wd;
+}
+
+@mixin flexSet($justify_content, $align_items, $flex_direction) {
+    display: flex;
+    justify-content: $justify_content;
+    align-items: $align_items;
+    flex-direction: $flex_direction;
+}

@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"); /* Colors */
+/* Functions */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: default;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  flex-direction: default;
+  padding: 1rem 7%;
+  width: 100%;
+}
+.header_img {
+  width: 10rem;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form .inputBox {
+  display: flex;
+  justify-content: default;
+  align-items: default;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.form .inputBox label {
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+.form .inputBox input {
+  padding: 0.8rem;
+  width: 100%;
+  border: 1px solid #f0f0f0;
+}
+.form .inputBox input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.form .inputBox input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.form .inputBox input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.form .inputBox input[type=submit] {
+  background: #25bee5;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.form .dateContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.form .dateContainer .dateBox {
+  display: flex;
+  justify-content: default;
+  align-items: default;
+  flex-direction: column;
+}
+.form .dateContainer .dateBox input, .form .dateContainer .dateBox select {
+  padding: 0.8rem;
+  width: 100%;
+  border: 1px solid #f0f0f0;
+}
+.form .dateContainer .dateBox input::-moz-placeholder, .form .dateContainer .dateBox select::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.form .dateContainer .dateBox input:-ms-input-placeholder, .form .dateContainer .dateBox select:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.form .dateContainer .dateBox input::placeholder, .form .dateContainer .dateBox select::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.form .dateContainer .dateBox label {
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+  margin-top: 1.2rem;
+}
+.form .title {
+  text-align: left;
+  width: 100%;
+}
+.form .title label {
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+.form .radioContainer {
+  display: flex;
+  justify-content: default;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.form .radioContainer .radioBox {
+  padding: 1rem;
+}
+.form .radioContainer .radioBox label {
+  font-size: 0.8rem;
+}
+
+/* responsividade em breve *//*# sourceMappingURL=style.css.map */

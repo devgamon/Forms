@@ -5,38 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
     <header class="header">
-        <a href="https://github.com/devgamon"><img src="logogamon.png" alt="Profile"></a>
+        <a href="https://github.com/devgamon"><img src="img/logogamon.png" alt="Profile" class="header_img"></a>
     </header>
 
     <main class="main">
         <form class="form">
             <div class="inputBox">
-                <label for="nome">Nome de Usuário</label>
-                <input type="text" name="nome" id="nome">
+                <label for="nome">Nome de Usuário:</label>
+                <input type="text" name="nome" id="nome" placeholder="Insira seu nome">
             </div>
             <div class="inputBox">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Insira seu email">
             </div>
             <div class="inputBox">
-                <label for="senha">Senha</label>
-                <input type="password" name="senha" id="senha">
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" placeholder="Crie uma senha">
             </div>
             <div class="inputBox">
-                <label for="ConfirmSenha">Confirmar Senha</label>
-                <input type="password" name="confirmSenha" id="confirmSenha">            
+                <label for="ConfirmSenha">Confirmar Senha:</label>
+                <input type="password" name="confirmSenha" id="confirmSenha" placeholder="Confirme sua senha">            
             </div>
+
+            <div class="title"><label>Data de Nascimento:</label></div>
+
             <div class="dateContainer">
                 <div class="dateBox">
-                    <label for="dia">Dia</label>
-                    <input type="number" name="dia" id="dia">
+                    <label for="dia">Dia:</label>
+                    <input type="number" name="dia" id="dia" placeholder="Dia">
                 </div>
                 <div class="dateBox">
-                    <label for="mes">Mês</label>
+                    <label for="mes">Mês:</label>
                     <select name="mes" id="mes">
+                        <option value="padrao">Mês</option>
                         <option value="janeiro">Janeiro</option>
                         <option value="fevereiro">Fevereiro</option>
                         <option value="março">Março</option>
@@ -52,11 +57,14 @@
                     </select>
                 </div>
                 <div class="dateBox">
-                    <label for="ano">Ano</label>
-                    <input type="number" name="ano" id="ano">
+                    <label for="ano">Ano:</label>
+                    <input type="number" name="ano" id="ano" placeholder="Ano">
                 </div>
             </div>
+
+            <div class="title"><label>Gênero:</label></div>
             <div class="radioContainer">
+                
                 <div class="radioBox">
                     <input type="radio" name="masculino" id="masculino">
                     <label for="masculino">Masculino</label>
